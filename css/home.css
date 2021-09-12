@@ -50,6 +50,7 @@
 .button--primary:hover{
     background: #2b7de9;
     color: white;
+    border: 1px solid transparent;
     box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
 }
 
@@ -63,6 +64,10 @@
 .page__header{
     justify-content: flex-end;
     padding: 6px 8px;
+}
+
+.header__sign-in-wrapper{
+    display: flex;
 }
 
 .header__app-icon{
@@ -88,7 +93,6 @@
     margin: 0 8px;
     padding: 0 23px;
     letter-spacing: 0.25px;
-    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 }
 
 /* Main */
@@ -197,12 +201,31 @@
     }
 }
 
-@media all and (max-width: 332px){
+@media all and (max-width: 649px){
     .main__image-wrapper > img{
         height: 82px;
     }
 
+    .header{
+        justify-content: space-between;
+    }
+}
+
+@media all and (max-width: 480px){
+    .main__image-wrapper > img{
+        height: 72px;
+    }
+}
+
+@media all and (max-width: 483px){
+    .footer__menu:first-child{
+        display: none;
+    }
+}
+
+@media all and (max-width: 319px){
     .page__footer{
+        margin-top: 51px;
         position: relative;
     }
 }
