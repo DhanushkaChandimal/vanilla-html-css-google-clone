@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+.page{
+    min-width: 320px;
+}
+
 .link{
     text-decoration: none;
 }
@@ -190,5 +194,22 @@
     .footer__menu-wrapper{
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+}
+
+@media all and (max-width: 332px){
+    .main__image-wrapper > img{
+        height: 82px;
+    }
+
+    .page__footer{
+        position: relative;
+    }
+}
+
+@media all and (max-height: 514px){
+    .page__footer{
+        margin-top: 26px;
+        position: relative;
     }
 }
