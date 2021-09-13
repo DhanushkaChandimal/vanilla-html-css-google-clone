@@ -3,6 +3,14 @@
     box-sizing: border-box;
 }
 
+.link{
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
 .page__header{
     padding-top: 22px;
 }
@@ -131,4 +139,76 @@ header .gsc-search-button-v2 svg{
 .header__app-icon:hover{
     background-color: rgba(60,64,67,0.08);
     border-radius: 100%;
+}
+
+/* Main */
+
+.gsc-wrapper{
+    padding-left: 160px;
+}
+
+.main .gsc-above-wrapper-area{
+    padding-left: 160px;
+}
+.main .gs-title *{
+    font-size: 20px !important;
+    margin-bottom: 3px;
+    color: #1a0dab !important;
+    font-weight: 500;
+}
+
+.main .gs-title:hover{
+    text-decoration: underline;
+}
+
+.main .gsc-url-top,
+.main .gs-title{
+    white-space: nowrap;
+    width: 600px;
+}
+
+.main .gs-image-box{
+    display: none;
+}
+
+.main .gs-visibleUrl span{
+    font-size: 14px;
+    color: #202124;
+}
+
+.main .gs-snippet{
+    color: #5f6368 !important;
+    font-size: 14px;
+    width: 600px;
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+}
+
+/* Footer */
+
+.footer__country{
+    display: flex;
+    padding: 15px 30px 15px 190px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+    background-color: #f2f2f2;
+}
+
+.footer__menu{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    font-size: 14px;
+    padding: 0 20px 0 175px;
+    background-color: #f2f2f2;
+}
+
+.footer__link{
+    padding: 15px;
+}
+
+.footer__link .link{
+    color: rgba(0,0,0,.54);
 }
