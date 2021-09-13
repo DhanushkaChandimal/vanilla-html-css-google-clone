@@ -185,6 +185,29 @@ header .gsc-search-button-v2 svg{
     overflow: hidden;
 }
 
+.main .gsc-cursor-box{
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/google-navigate.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center top;
+    padding-top: 45px;
+}
+
+.main .gsc-cursor-page{
+    color: #4285f4 !important;
+    padding-left: 5px;
+}
+
+.main .gsc-cursor-current-page{
+    color: rgba(0,0,0,.87) !important;
+}
+
+.main .gsc-cursor-current-page:hover{
+    text-decoration: none !important;
+}
+
 /* Footer */
 
 .footer__country{
