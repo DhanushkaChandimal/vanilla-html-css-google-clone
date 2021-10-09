@@ -198,6 +198,10 @@ header .gsc-search-button-v2 svg{
 
 /* Main */
 
+.main{
+    min-height: 75.4vh;
+}
+
 .gsc-orderby-container{
     display: none;
 }
