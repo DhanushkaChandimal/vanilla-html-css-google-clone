@@ -354,3 +354,14 @@ header .gsc-search-button-v2 svg{
         margin-left: -152px;
     }
 }
+
+@media all and (max-width: 369px){
+
+    .footer__country{
+        justify-content: center;
+    }
+
+    .footer__menu{
+        justify-content: center;
+    }
+}
