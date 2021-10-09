@@ -145,32 +145,61 @@ header .gsc-search-button-v2 svg{
 
 .header__categories{
     display: flex;
-    height: 46px;
-    padding-top: 25px;
+    height: 56px;
+    padding-top: 10px;
     padding-left: 160px;
     margin-left: 10px;
     font-size: 14px;
 }
 
-.categories svg{
-    height: 16px;
-    width: 16px;
-    color: #e60000!;
-    /* color: #969ba1; */
+.item{
+    display: inline-flex;
+    padding: 15px 10px 10px 10px;
+    margin-right: 2px;
+    text-decoration: none;
+    height: 100%;
+    color: #5f6368;
+    align-items: center;
 }
 
-.categories div{
-    padding: 0 12px 0 10px;
+.item svg{
+    height: 16px;
+    width: 16px;
+    padding-right: 5px;
+}
+
+.item:hover{
+    cursor: pointer;
+}
+
+.tools{
+    border: 1px solid transparent;
+    text-align: center;
+    border-radius: 2px;
+    line-height: 19px;
+    cursor: pointer;
+    margin-left: -1px;
+    padding: 4px 11px;
+    margin-right: -11px;
+    margin: 0 0 0 150px;
+}
+
+.tools:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    background-image: -webkit-linear-gradient(top,#f8f9fa,#f8f9fa);
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.all{
+    border-bottom: 3px solid #8ab4f8;
 }
 
 /* Main */
 
 .gsc-orderby-container{
     display: none;
-}
-
-.gsc-control-cse{
-    padding-top: none!;
 }
 
 .gsc-wrapper{
@@ -181,6 +210,7 @@ header .gsc-search-button-v2 svg{
     padding-left: 160px;
     border-top: 1px solid #e9e9e9;
     border-bottom: none;
+    margin-top: -1em;
 }
 .main .gs-title *{
     font-size: 20px !important;
@@ -266,4 +296,61 @@ header .gsc-search-button-v2 svg{
 
 .footer__link .link{
     color: rgba(0,0,0,.54);
+}
+
+@media all and (min-width: 1120px) and (max-width: 1300px){
+    .gsc-wrapper{
+        margin-left: calc((100vw - 1065px) / 2 - 180px);
+    }
+    
+    .main .gsc-above-wrapper-area{
+        margin-left: calc((100vw - 1065px) / 2 - 180px);
+    }
+
+    .header__categories{
+        margin-left: calc((100vw - 1065px) / 2 - 180px);
+    }
+
+    .header__search-wrapper{
+        padding-left: 180px;
+        margin-left: calc((100vw - 1065px) / 2 - 180px);
+    }
+
+    .search{
+        width: 527px;
+    }
+
+    .footer__country{
+        margin-left: calc((100vw - 1065px) / 2 - 180px);
+    }
+
+    .footer__menu{
+        margin-left: calc((100vw - 1065px) / 2 - 180px);
+    }
+}
+
+@media all and (max-width: 1119px){
+    .gsc-wrapper{
+        margin-left: -152px;
+    }
+
+    .main .gsc-above-wrapper-area{
+        margin-left: -152px;
+    }
+
+    .header__categories{
+        margin-left: -152px;
+    }
+
+    .search{
+        width: 527px;
+    }
+
+    .footer__country{
+        margin-left: -152px;
+    }
+
+    .footer__menu{
+        margin-left: -152px;
+    }
 }
